@@ -1,0 +1,27 @@
+<header class="history__header">
+  <div class="history__profile">
+    <img class="history__pic avatar" src="{{user.avatar}}" alt="{{user.name}}" />
+  </div>
+  <div class="history__controls">
+    <!-- icons -->
+  </div>
+</header>
+
+<form class="history__search">
+  <input class="history__input" type="text" placeholder="Search or start new chat" name="history_chat" />
+  <button class="history__submit" type="submit">
+    <i class="fas fa-search"></i>
+  </button>
+</form>
+
+<div class="history__talks">
+
+  <!-- angular component -->
+  <app-history-chat 
+    *ngFor="let chat of chats" 
+    [avatar]="chat.avatar"
+    [name]="chat.name"
+    [message]="chat.messages[0].label"
+    [date]="chat.messages[0].date"></app-history-chat>
+
+</div>

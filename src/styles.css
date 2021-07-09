@@ -1,0 +1,72 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary: #C89713;
+  /*--primary-variant: #965f3b;*/
+  --secondary: #3b3b3b;
+  /* --secondary-variant: #8c8483; */
+  --background: #191919;
+  --surface: #c4c4c4;
+  --white: #ffffff;
+  /* --font-primary: ;
+  --font-secondary: ; */
+  /* --on-primary: ;
+  --on-secondary: ; */
+}
+
+:root {
+  --primary: #C89713;
+  /*--primary-variant: #965f3b;*/
+  --secondary: #3b3b3b;
+  /* --secondary-variant: #8c8483; */
+  --background: #191919;
+  --surface: #c4c4c4;
+  --white: #ffffff;
+  /* --font-primary: ;
+  --font-secondary: ; */
+  /* --on-primary: ;
+  --on-secondary: ; */
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  outline-color: var(--primary);
+  outline-width: 1px;
+}
+
+body {
+  background: var(--background);
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.4;
+  margin: 0;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+}
